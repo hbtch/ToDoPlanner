@@ -8,11 +8,18 @@ const ToDoList = () => {
   }
   return (
     <div>
-      <StyledButton
-        text="Сделать"
-        active={active === '1'}
-        onClick={handleClick('1')}
-      />
+      <br />
+      <StyledButton active={active === '1'} onClick={handleClick('1')}>
+        Сделать
+      </StyledButton>
+
+      <StyledButton active={active === '2'} onClick={handleClick('2')}>
+        В работе
+      </StyledButton>
+
+      <StyledButton active={active === '3'} onClick={handleClick('3')}>
+        Готово
+      </StyledButton>
     </div>
   )
 }
