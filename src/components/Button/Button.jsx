@@ -1,11 +1,10 @@
-const Button = (props) => {
-    return (
-        <button
-        onClick={props.onClick}
-        disabled={props.disabled}
-        className={props.className}>
-        </button>
-    )
+import { StyledButton } from './styled'
+const Button = ({ text, active, onClick, disabled, className }) => {
+  return (
+    <StyledButton onClick={onClick} active={active}>
+      {text}
+    </StyledButton>
+  )
 }
 
-export default Button;
+export default Button
