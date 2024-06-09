@@ -1,12 +1,13 @@
+import { StyledButton } from './styled'
 const Button = ({ text, active, onClick, disabled, className }) => {
   return (
-    <button
+    <StyledButton
       onClick={onClick}
       className={`${className} ${active ? 'active' : ''}`}
       disabled={disabled}
     >
       {text}
-    </button>
+    </StyledButton>
   )
 }
 
