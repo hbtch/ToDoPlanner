@@ -1,10 +1,7 @@
-import {
-  ButtonContainer,
-  StyledButton,
-  StyledHeader,
-} from '../../components/Button/styled'
 import React, { useState } from 'react'
-import ListItem from '../../components/ListItem'
+import Button from '../../components/Button/Button'
+import { Header, StatusSelector } from './styled'
+import ListItem from '../../components/ListItem/ListItem'
 
 const ToDoList = () => {
   const [active, setActive] = useState(1)
@@ -13,30 +10,25 @@ const ToDoList = () => {
   }
   return (
     <div>
-      <StyledHeader>
+      <Header>
         <img src="/bee-left.png" alt="LeftBeeImage" className="small-icon" />
         <h1>To Do List</h1>
         <img src="/bee-right.png" alt="LeftBeeImage" className="small-icon" />
-      </StyledHeader>
-      <ButtonContainer>
+      </Header>
+      <StatusSelector>
         <br />
-        <StyledButton active={active === '1'} onClick={handleClick('1')}>
+        <Button active={active === 1} onClick={handleClick(1)}>
           Сделать
-        </StyledButton>
-
-        <StyledButton active={active === '2'} onClick={handleClick('2')}>
+        </Button>
+        <Button active={active === 2} onClick={handleClick(2)}>
           В работе
-        </StyledButton>
+        </Button>
 
-        <StyledButton active={active === '3'} onClick={handleClick('3')}>
+        <Button active={active === 3} onClick={handleClick(3)}>
           Готово
-        </StyledButton>
-      </ButtonContainer>
+        </Button>
+      </StatusSelector>
       <div>
-        <ListItem />
-        <ListItem />
-        <ListItem />
-        <ListItem />
         <ListItem />
         <ListItem />
         <ListItem />

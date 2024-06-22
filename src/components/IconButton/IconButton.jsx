@@ -1,4 +1,4 @@
-import { StyledIcon } from './styled'
+import { StyledIcon } from '../IconButton/styled'
 
 const IconButton = ({ active, onClick }) => {
   return (
