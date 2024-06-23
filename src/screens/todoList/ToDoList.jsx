@@ -3,6 +3,8 @@ import Button from '../../components/Button'
 import { Header, StatusSelector } from './styled'
 import ListItem from '../../components/ListItem'
 
+const items = Array.from({ length: 10 }, (_, index) => <ListItem key={index} />)
+
 const ToDoList = () => {
   const [active, setActive] = useState(1)
   const handleClick = (id) => () => {
@@ -36,11 +38,14 @@ const ToDoList = () => {
         ></Button>
       </StatusSelector>
       <div>
-        <ListItem />
-        <ListItem />
-        <ListItem />
+        <ul style={{ listStyleType: 'none', padding: 0 }}>
+          {items.map((item, index) => (
+            <li key={index}>{item}</li>
+          ))}
+        </ul>
       </div>
     </div>
   )
 }
+
 export default ToDoList
