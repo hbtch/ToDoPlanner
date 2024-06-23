@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
-import Button from '../../components/Button/Button'
+import Button from '../../components/Button'
 import { Header, StatusSelector } from './styled'
-import ListItem from '../../components/ListItem/ListItem'
+import ListItem from '../../components/ListItem'
 
 const ToDoList = () => {
   const [active, setActive] = useState(1)
@@ -17,16 +17,23 @@ const ToDoList = () => {
       </Header>
       <StatusSelector>
         <br />
-        <Button active={active === 1} onClick={handleClick(1)}>
-          Сделать
-        </Button>
-        <Button active={active === 2} onClick={handleClick(2)}>
-          В работе
-        </Button>
+        <Button
+          active={active === 1}
+          onClick={handleClick(1)}
+          text="Сделать"
+        ></Button>
 
-        <Button active={active === 3} onClick={handleClick(3)}>
-          Готово
-        </Button>
+        <Button
+          active={active === 2}
+          onClick={handleClick(2)}
+          text="В работе"
+        ></Button>
+
+        <Button
+          active={active === 3}
+          onClick={handleClick(3)}
+          text="Готово"
+        ></Button>
       </StatusSelector>
       <div>
         <ListItem />
