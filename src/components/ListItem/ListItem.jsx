@@ -1,14 +1,15 @@
-import StyledButton from '../Button'
+import Button from '../Button'
 import IconButton from '../IconButton'
 import { ListItemContainer, StyledLine } from './styled'
+import { EditButton } from '../EditButton'
 
 const ListItem = () => {
   return (
     <div>
       <ListItemContainer>
-        <StyledButton text="Сделать"></StyledButton>
+        <Button text="Сделать" />
         <StyledLine />
-        <StyledButton text="Изменить"></StyledButton>
+        <EditButton />
         <IconButton />
       </ListItemContainer>
     </div>

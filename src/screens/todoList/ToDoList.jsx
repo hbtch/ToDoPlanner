@@ -23,20 +23,23 @@ const ToDoList = () => {
           active={active === 1}
           onClick={handleClick(1)}
           text="Сделать"
-        ></Button>
+          color="#FB9D77"
+        />
 
         <Button
           active={active === 2}
           onClick={handleClick(2)}
           text="В работе"
-        ></Button>
+        />
 
         <Button
           active={active === 3}
           onClick={handleClick(3)}
           text="Готово"
-        ></Button>
+          color="#BF7654"
+        />
       </StatusSelector>
+
       <div>
         <ul style={{ listStyleType: 'none', padding: 0 }}>
           {items.map((item, index) => (
