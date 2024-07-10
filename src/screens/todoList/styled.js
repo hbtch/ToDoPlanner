@@ -9,9 +9,14 @@ export const Header = styled.header`
     text-align: center;
   }
   .small-icon {
+  }
+  .left-above {
     width: 100px;
     height: 100px;
-    margin: 0 10px;
+  }
+  .top-right {
+    width: 100px;
+    height: 100px;
   }
 `
 export const StatusSelector = styled.div`
@@ -19,4 +24,13 @@ export const StatusSelector = styled.div`
   justify-content: center;
   margin-top: 20px;
   gap: 20px;
+`
+export const BottomIconContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+`
+
+export const BottomIcon = styled.img`
+  width: 100px;
+  height: 100px;
 `
