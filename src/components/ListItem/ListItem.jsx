@@ -1,18 +1,17 @@
 import Button from '../Button'
 import IconButton from '../IconButton'
-import { ListItemContainer, StyledLine } from './styled'
+import { ListItemContainer, ListItemText } from './styled'
 import { EditButton } from '../EditButton'
 
-const ListItem = () => {
+const ListItem = ({ task, onEdit, onRemove }) => {
   return (
-    <div>
-      <ListItemContainer>
-        <Button text="Сделать" />
-        <StyledLine />
-        <EditButton />
-        <IconButton />
-      </ListItemContainer>
-    </div>
+    <ListItemContainer>
+      <Button text="Сделать" />
+      <ListItemText>{task.text}</ListItemText>
+      {/* <StyledLine /> */}
+      <EditButton onClick={onEdit} />
+      <IconButton onClick={() => onRemove(task.id)} />
+    </ListItemContainer>
   )
 }
 
