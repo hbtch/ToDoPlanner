@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.js": "/static/js/main.e03fa2ee.js",
-    "index.html": "/index.html",
-    "main.e03fa2ee.js.map": "/static/js/main.e03fa2ee.js.map"
+    "main.js": "/ToDoPlanner/static/js/main.e03fa2ee.js",
+    "index.html": "/ToDoPlanner/index.html",
+    "main.e03fa2ee.js.map": "/ToDoPlanner/static/js/main.e03fa2ee.js.map"
   },
   "entrypoints": [
     "static/js/main.e03fa2ee.js"
