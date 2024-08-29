@@ -4,6 +4,7 @@ import Button from '../../components/Button'
 import { Header, StatusSelector } from './styled'
 import { AddTaskForm } from '../../components/AddTaskForm'
 import ListItem from '../../components/ListItem'
+import ButterflyAnimation from '../../components/Canvas/BirdAnimation'
 
 const ToDoList = () => {
   const [active, setActive] = useState(1)
@@ -97,6 +98,7 @@ const ToDoList = () => {
       </div>
       {/*Компонент для добавления новой задачи, ему передаем функцию handleAddTask через пропс onAddTask, которая будет вызываться при добавлении новой задачи*/}
       <AddTaskForm onAddTask={handleAddText} />
+      <ButterflyAnimation />
     </div>
   )
 }
