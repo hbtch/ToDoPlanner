@@ -1,5 +1,6 @@
 {
   "name": "todoplanner",
+  "homepage": "https://hbtch.github.io/ToDoPlanner",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -13,8 +14,7 @@
     "react-dom": "^18.3.1",
     "react-scripts": "^5.0.1",
     "uuid": "^10.0.0",
-    "web-vitals": "^4.0.1",
-    "homepage": "https://hbtch.github.io/ToDoPlanner"
+    "web-vitals": "^4.0.1"
   },
   "scripts": {
     "start": "react-scripts start",

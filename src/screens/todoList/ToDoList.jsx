@@ -1,12 +1,7 @@
 import React, { useState } from 'react'
 import { v4 as uuidv4 } from 'uuid'
 import Button from '../../components/Button'
-import {
-  Header,
-  StatusSelector,
-  BottomIconContainer,
-  BottomIcon,
-} from './styled'
+import { Header, StatusSelector } from './styled'
 import { AddTaskForm } from '../../components/AddTaskForm'
 import ListItem from '../../components/ListItem'
 
@@ -58,13 +53,13 @@ const ToDoList = () => {
     <div>
       <Header>
         <img
-          src="/bee-left-above.svg"
+          src="/ToDoPlanner/bee-left-above.svg"
           alt="BeeLeftAbove"
           className="small-icon left-above"
         />
         <h1>To Do List</h1>
         <img
-          src="/bee-top-right.svg"
+          src="/ToDoPlanner/bee-top-right.svg"
           alt="BeeTopRight"
           className="small-icon top-right"
         />
@@ -102,18 +97,6 @@ const ToDoList = () => {
       </div>
       {/*Компонент для добавления новой задачи, ему передаем функцию handleAddTask через пропс onAddTask, которая будет вызываться при добавлении новой задачи*/}
       <AddTaskForm onAddTask={handleAddText} />
-      <BottomIconContainer>
-        <BottomIcon
-          src="/bee-bottom-left.svg"
-          alt="BeeBottomLeft"
-          className="small-icon bottom-left"
-        />
-        <BottomIcon
-          src="/bee-bottom-right.svg"
-          alt="BeeBottomRight"
-          className="small-icon bottom-right"
-        />
-      </BottomIconContainer>
     </div>
   )
 }

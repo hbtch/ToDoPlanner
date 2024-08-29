@@ -25,12 +25,3 @@ export const StatusSelector = styled.div`
   margin-top: 20px;
   gap: 20px;
 `
-export const BottomIconContainer = styled.div`
-  display: flex;
-  justify-content: space-between;
-`
-
-export const BottomIcon = styled.img`
-  width: 100px;
-  height: 100px;
-`
