@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/ToDoPlanner/static/js/main.8cb461ed.js",
+    "main.js": "/ToDoPlanner/static/js/main.309b3e1a.js",
     "index.html": "/ToDoPlanner/index.html",
-    "main.8cb461ed.js.map": "/ToDoPlanner/static/js/main.8cb461ed.js.map"
+    "main.309b3e1a.js.map": "/ToDoPlanner/static/js/main.309b3e1a.js.map"
   },
   "entrypoints": [
-    "static/js/main.8cb461ed.js"
+    "static/js/main.309b3e1a.js"
   ]
 }
