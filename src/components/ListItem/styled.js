@@ -19,3 +19,12 @@ export const ListItemText = styled.span`
   flex: 1;
   margin: 0 8px;
 `
+export const EditableInput = styled.input`
+  background-color: #fbf6e8;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  width: 100%;
+  font-size: 16px;
+  outline: none;
+`
